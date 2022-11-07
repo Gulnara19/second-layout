@@ -14,30 +14,33 @@
 </head>
 
 <body class="page">
-    <div class="header-wrapper">
-    <header class="header">
+    <div class="page__inner page__inner_intro page__inner_grey">
+    <header class="header page__header">
         <nav class="site-menu">
-            <ul class="menu-list">
-                <li><a class="menu-link active-link" href="#">Home</a></li>
-                <li><a class="menu-link" href="">Portfolio</a></li>
-                <li><a class="menu-link" href="">About us</a></li>
-                <li><a class="menu-link" href="">Contact</a></li>
+            <ul class="site-menu__list">
+                <li class="site-menu__item"><a class="site-menu__link site-menu__link_active" href="#">Home</a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="">Portfolio</a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="">About us</a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="">Contact</a></li>
             </ul>
 
         </nav>
     </header>
+    </div>
+    <div class="page__inner page__inner_section page__inner_grey"></div>
     <section class="intro">
-        <div class="intro-info">
-           <h2 class="intro-heading">our strong organization</h2> 
-           <p class="intro-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit, aut itaque blanditiis commodi impedit eius id alias perferendis doloribus dicta sequi mollitia voluptatem reprehenderit esse iusto tempore praesentium perspiciatis.</p>
-           <a class="intro-action" href="">Contact Us</a>
+        <div class="intro__info">
+           <h2 class="intro__heading">Our strong <span class="intro__span intro__span_special">organization</span></h2> 
+           <p class="intro__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, sit, aut itaque blanditiis commodi impedit eius id alias perferendis doloribus dicta sequi mollitia voluptatem reprehenderit esse iusto tempore praesentium perspiciatis.</p>
+           <a class="action-link action-link_red-full" href="">Contact Us</a>
         </div>
-        <video class="intro-video">
-            <source  src="video/business179.mov"
+        <video class="intro__video" preload="auto" muted autoplay loop poster="img/1667729655027.jpg">
+            <source  src="video/83.mp4"
             type="video/mp4">
+            Ваш браузер устарел. Видео по ссылке:
+            <a href="video/83.mp4">Видео по ссылке</a>
         </video>
     </section>
 </div>
 </body>
-
 </html>

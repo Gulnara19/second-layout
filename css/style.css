@@ -65,6 +65,7 @@
 
 
 /* Body */
+/* Page */
 
 .page {
   font-family: 'Open Sans';
@@ -73,11 +74,29 @@
   font-size: 16px;
 }
 
-/* Header */
-.header-wrapper {
+.page__inner {
+  
+  display: block;
+  width: 100%;
+}
+
+.page__inner_intro{
   padding-top: 29px;
+}
+
+.page__inner_section{
+  padding: 102px 0 110px;
+}
+
+.page__inner_grey{
   background-color: #F6F2F2;
 }
+
+.page__header{
+  margin: 0 auto;
+}
+
+/* Header */
 
 .header {
   display: flex;
@@ -88,11 +107,11 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.site-menu{
+.site-menu {
   margin-left: -30px;
 }
 
-.menu-list {
+.site-menu__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -100,12 +119,12 @@
   list-style: none;
 }
 
-.menu-list>li {
+.site-menu__item {
   display: flex;
   min-height: 89px;
 }
 
-.menu-link {
+.site-menu__link {
   display: flex;
   align-items: center;
   padding: 0 30px;
@@ -115,16 +134,80 @@
   line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  color: #e0e0e0;
+}
+
+.site-menu__link:hover {
+  background-color: #FF3F40;
+}
+
+.site-menu__link_active {
+  background-color: #FF3F40;
+}
+
+/* Main */
+/* Intro */
+
+.intro {
+  display: flex;
+  width: 1249px;
+  margin: 0 auto;
+  justify-content:space-between ;
+}
+
+.intro__info{
+max-width: 595px;
+}
+
+.intro__heading {
+  font-family: 'Open Sans';
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 19px;
+  margin-top: -15px;
+}
+
+.intro__span_special{
+  letter-spacing: 6px;
+}
+
+.intro__text {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 58px;
+}
+
+.action-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 227px;
+  min-height: 55px;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.action-link_red-full{
   color: #fff;
-  padding-left: 39px;
-  padding-bottom: 26px;
- 
-}
-.menu-link:hover{
-  background-color: #FF3F40;
+  background-color: #FF2D2D;
 }
 
-.active-link{
-  background-color: #FF3F40;
+.intro__video {
+  object-fit: cover;
+  width: 551px;
+  height: 356px;
+  box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
-
