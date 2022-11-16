@@ -121,6 +121,12 @@ button {
 
 .site-menu {
   margin-left: -30px;
+} 
+
+@media screen and (max-width: 600px) {
+  .site-menu {
+    margin-left: initial;
+  } 
 }
 
 .site-menu__list {
@@ -130,6 +136,13 @@ button {
   padding: 0;
   list-style: none;
 }
+
+@media screen and (max-width: 600px)  {
+  .site-menu__list {
+    justify-content: center;
+  }
+}
+
 
 .site-menu__item {
   display: flex;
@@ -162,20 +175,41 @@ button {
 
 .intro {
   display: flex;
-  width: 1249px;
+  flex-wrap: wrap;
+  max-width: 1249px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1240px) {
+  .intro{
+    flex-wrap: nowrap;
+  }
+}
 .intro__info {
-  width: 595px;
+  max-width: 595px;
+  margin-right: 2vw;
+}
+
+@media screen and (max-width: 1240px) {
+  .intro__info{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro__info{
+    width: 100%;
+    margin-bottom: 80px;
+  }
 }
 
 .intro__heading {
   font-family: 'Open Sans';
   font-size: 60px;
-  line-height: 72px;
+  line-height: 1.2;
   font-weight: 800;
+  font-variation-settings: "wght" 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin: 0;
@@ -185,6 +219,9 @@ button {
 
 .intro__span_special {
   letter-spacing: 6px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .intro__text {
@@ -228,8 +265,20 @@ button {
 .intro__video {
   object-fit: cover;
   width: 551px;
-  min-height: 356px;
+  height: 356px;
   box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
+}
+
+@media screen and (max-width: 1240px) {
+  .intro__video{
+    width: 50%;
+  } 
+}
+
+@media screen and (max-width: 800px) {
+  .intro__video{
+    width: 100%;
+  } 
 }
 
 /* Services */
@@ -604,7 +653,7 @@ button {
 .subscribe__heading {
   font-family: 'Open Sans';
   font-size: 42px;
-  line-height: 1, 2;
+  line-height: 1.2;
   font-weight: 700;
   margin: 0;
   margin-bottom: 17px;
@@ -820,4 +869,30 @@ button {
   font-family: 'Open Sans';
   font-size: 16px;
   color: #FFFFFF;
+}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  width: 1249px;
+  min-height: 113px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.page__inner_dark-2{
+  display: flex;
+  background-color: #313030;
+}
+
+.footer__copy{
+  margin: 0;
+  color: #B8B8B8;
+}
+
+.Social{ 
+  display: flex;
+  gap: 18px;
 }
