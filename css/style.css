@@ -124,7 +124,7 @@ button {
 /* Header */
 
 .header {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -221,6 +221,7 @@ button {
   bottom: 0;
   transform: translate(-50%, 100%);
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 1;
   margin: 0;
@@ -230,25 +231,29 @@ button {
 
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .popup-menu__list {
     justify-content: center;
   }
-}
+} */
 
 .popup-menu__item {
+  width: 100%;
   display: flex;
   min-height: 89px;
 }
 
 .popup-menu__link {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 30px;
@@ -279,7 +284,7 @@ button {
   max-width: 1249px;
   margin: 0 auto;
   margin-top: 90px;
-  margin-left: 0;
+  margin-left: 60px;
   margin-bottom: 105px;
   padding: 0 1vw;
   justify-content: space-between;
@@ -293,7 +298,7 @@ button {
 
 .intro__info {
   max-width: 595px;
-  margin-right: 2vw;
+  margin-right: 1vw;
 }
 
 @media screen and (max-width: 1240px) {
@@ -364,6 +369,10 @@ button {
   color: #FF2D2D;
   background-color: rgba(0, 0, 0, 0.0001);
   border: 2px solid #FF2D2D;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -516,6 +525,7 @@ button {
   margin-bottom: 28.5px;
   text-transform: uppercase;
   text-align: center;
+  flex-grow: 1;
   color: #000;
 }
 
@@ -818,14 +828,16 @@ button {
   font-family: 'Open Sans';
   font-size: 16px;
   line-height: 28px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 59px;
   color: #FFFFFF;
 }
 
 .subscribe__form {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
 }
 
@@ -856,7 +868,7 @@ button {
   background-color: #FF2D2D;
 }
 
-@media screen and (min-width: 500px) and(max-width:1240px) {
+/* @media screen  and(max-width:1240px) {
   .subscribe {
     overflow-wrap: break-word;
     flex-wrap: nowrap;
@@ -872,11 +884,6 @@ button {
     max-width: 100%;
   }
 
-  .subscribe__form {
-    width: 100%;
-    margin-right: initial;
-  }
-
   .subscribe__email {
     width: 100%;
   }
@@ -884,7 +891,7 @@ button {
   .subscribe__button {
     width: 100%;
   }
-}
+} */
 
 /* Feedback */
 .feedback {
