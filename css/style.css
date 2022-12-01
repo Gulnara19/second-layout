@@ -101,9 +101,9 @@ button {
   padding-bottom: 90px;
 }
 
-.page__inner_grey {
+ .page__inner_grey {
   background-color: #F6F2F2;
-}
+} 
 
 .page__inner_dark {
   background-color: #2c2c2c;
@@ -284,7 +284,6 @@ button {
   max-width: 1249px;
   margin: 0 auto;
   margin-top: 90px;
-  margin-left: 60px;
   margin-bottom: 105px;
   padding: 0 1vw;
   justify-content: space-between;
@@ -536,7 +535,7 @@ button {
   line-height: 28px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 34.5px;
+  margin-bottom: 19px;
   color: #000;
 }
 
@@ -552,7 +551,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 58px;
+  margin: 0 auto;
+  margin-bottom: 65px;
 }
 
 .filter__list {
@@ -571,6 +571,7 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
+  margin: 10px;
   padding: 0;
   color: #000000;
 }
@@ -586,15 +587,19 @@ button {
 .feature__products {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 50px;
   gap: 16px;
-  flex: 1 1;
 }
 
 .feature__product {
   width: 300px;
   object-fit: cover;
   object-position: 0 50%;
+  flex: 1;
 }
+
+
 
 /* Team */
 
